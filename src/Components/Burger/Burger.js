@@ -9,7 +9,15 @@ const Burger = props => {
             return <BurgerIngredients type = {igKey} key = {index+igKey}></BurgerIngredients>
         })
     })
-    console.log(ig)
+        .reduce((arr, el)=>{
+            return arr.concat(el)
+        },[])
+    
+    //console.log(ig)
+
+    if(ig.length===0)
+    ig = <p>Please add iggredients</p>
+
    return(
        <div className = {classes.Burger}>
           <BurgerIngredients type= "breadTop"></BurgerIngredients>
@@ -19,7 +27,6 @@ const Burger = props => {
           <BurgerIngredients type= "cheese"></BurgerIngredients>
           <BurgerIngredients type= "tikki"></BurgerIngredients> */}
           <BurgerIngredients type= "breadBottom"></BurgerIngredients>
-          Price ={props.price}
        </div>
    )
 }

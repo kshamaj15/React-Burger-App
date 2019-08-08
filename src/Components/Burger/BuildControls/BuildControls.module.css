@@ -1,0 +1,9 @@
+.BuidControls{
+    width: 100%;
+    background-color: #25b68a;
+    display:flex;
+    flex-flow: column;
+    align-items: center;
+    box-shadow: 0 2px 1px #92e0c9;
+    margin: auto;
+}
