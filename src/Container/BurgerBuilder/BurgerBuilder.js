@@ -1,5 +1,4 @@
 import React, {Component} from 'react'
-import Aux from '../../hoc/Aux'
 import Burger from '../../Components/Burger/Burger'
 import BuildControls from '../../Components/Burger/BuildControls/BuildControls'
 import Model from '../../Components/UI/Model/Model'
@@ -83,9 +82,8 @@ class BurgerBuilder extends Component{
             
         // }
         return (
-            <Aux>
+            <div>
                 {/* <div>Price = {this.state.price}</div> */}
-                >
                <Burger ingred = {this.state.ingred}>
                </Burger>
                {/* {order} */}
@@ -103,7 +101,7 @@ class BurgerBuilder extends Component{
                purchasable = {IGPRICES.purchasable}
                showOrderDetails = {this.purchaseHandler}
                ></BuildControls>
-            </Aux>
+            </div>
         )
     }
 } 

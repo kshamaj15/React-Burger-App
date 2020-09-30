@@ -1,5 +1,4 @@
 import React from 'react'
-import Aux from '../../../hoc/Aux'
 import Button from '../../UI/Button/Button'
 
 const OrderSummery = props => {
@@ -8,7 +7,7 @@ const OrderSummery = props => {
         return <li><span style = {{textTransform : 'capitalize'}}>{igKey}</span> : {props.igSummery[igKey]}</li>
     });
     return(
-        <Aux>
+        <div>
             <h3>Your Order Summery</h3>
             <p>A delicious Burger with following ingredients: </p>
             <ul>
@@ -27,7 +26,7 @@ const OrderSummery = props => {
                 Cancel
             </Button>
 
-        </Aux>
+        </div>
     )
 }
 

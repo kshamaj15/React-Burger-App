@@ -1,10 +1,9 @@
 import React from 'react'
 import classes from './Model.module.css'
-import Aux from '../../../hoc/Aux'
 import Backdrop from '../Backdrop/Backdrop'
 
 const  Model = props => (
-    <Aux>
+    <div>
         <Backdrop show = {props.show} clicked = {props.removeModel}></Backdrop>
         <div className = {classes.Model} 
         style = {{
@@ -13,7 +12,7 @@ const  Model = props => (
         }}>
         {props.children}
         </div>
-    </Aux>
+    </div>
 )
 
 export default Model
